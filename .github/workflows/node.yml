@@ -25,7 +25,7 @@ jobs:
         echo "git setup"        
         pwd
         git init
-        git config --global -add safe.directory /home/runner/work/node-code/node-code
+        git config --global --add safe.directory /home/runner/work/node-code/node-code
         git config --global user.name "hiren"
         git config --global url.https://${{ secrets.git_pat }}@github.com/hirenrparghi/node-code
         git config --global user.email "hirenparghi90@gmail.com"
