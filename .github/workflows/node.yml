@@ -32,7 +32,7 @@ jobs:
         git add .
         git commit -m "publish node modules"
         git config --global http.sslverify false
-        git push origin main- -force
+        git push origin main --force
       
         
         
