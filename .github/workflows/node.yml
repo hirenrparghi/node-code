@@ -29,7 +29,7 @@ jobs:
         git config --global user.name "hiren"
         git config --global user.email "hirenparghi90@gmail.com"
         # git remote add origin https://github.com/hirenrparghi/node-code
-        git remote add origin https://hirenrparghi:Profit@221176@github.com/hirenrparghi/node.git
+        # git remote add origin https://hirenrparghi:Profit@221176@github.com/hirenrparghi/node.git
         git add .
         git commit -m "publish node modules"
         git config --global http.sslverify false
