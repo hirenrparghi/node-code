@@ -13,10 +13,10 @@ jobs:
       with:
         node-version: 18
 
-    - name: setup node
+    - name: verify node
       run: |
         node --version
-        nmp --version
+        npm --version
         npm cache clean --force
         npm cache verify
         echo "install octokit"
