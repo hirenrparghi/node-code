@@ -34,7 +34,7 @@ jobs:
         git add .
         git commit -m "publish node modules"
         git config --global http.sslverify false
-        # git checkout -b main
+        git checkout -b main
         git push origin main --force
       
         
