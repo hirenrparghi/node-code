@@ -22,8 +22,9 @@ jobs:
         echo "install octokit"
         npm install @octokit/auth-app
         npm install @octokit/request
-        echo "git setup"
-        git config --global --add safe.directory /__w/node-code/node-code
+        echo "git setup"        
+        pwd
+        # git config --global --add safe.directory /__w/node-code/node-code
         git config --global user.name "hiren"
         git config --global user.email "hirenparghi90@gmail.com"
         git remote add origin https://github.com/hirenrparghi/node-code
