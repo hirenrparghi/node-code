@@ -30,11 +30,12 @@ jobs:
         git config --global user.name "hiren"
         # git config --global url.https://${{ secrets.GIT_PAT }}@github.com/hirenrparghi/node-code
         git config --global user.email "hirenparghi90@gmail.com"
-        git remote add origin https://github.com/hirenrparghi/node-code
+        git remote add origin https://github.com/hirenrparghi/node-code.git
         git add .
         git commit -m "publish node modules"
         git config --global http.sslverify false
         git checkout -b main
+        git remote add origin git@github.com:username/your-repo.git
         git push origin main --force
       
         
