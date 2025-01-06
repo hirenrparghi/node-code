@@ -29,12 +29,12 @@ jobs:
         git config --global --add safe.directory /home/runner/work/node-code/node-code
         git config --global user.name "hiren"
         git config --global user.email "hirenparghi90@gmail.com"
-        git remote add origin https://github.com/hirenrparghi/node-code.git
+        git remote add origin git@github.com:hirenrparghi/node-code.git
         git add .
         git commit -m "publish node modules"
         git config --global http.sslverify false
         git checkout -b main
-        git push origin --force git@github.com:hirenrparghi/node-code.git
+        git push origin main --force 
 
       
         
