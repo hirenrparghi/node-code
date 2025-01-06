@@ -24,6 +24,7 @@ jobs:
         npm install @octokit/request
         echo "git setup"        
         pwd
+        ls -la
         git init
         git config --global --add safe.directory /home/runner/work/node-code/node-code
         git config --global user.name "hiren"
