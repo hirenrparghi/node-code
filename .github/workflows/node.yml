@@ -15,26 +15,27 @@ jobs:
 
     - name: verify node
       run: |
-        node --version
-        npm --version
-        npm cache clean --force
-        npm cache verify
-        echo "install octokit"
-        npm install @octokit/auth-app
-        npm install @octokit/request
-        echo "git setup"        
-        pwd
-        ls -la
-        git init
-        git config --global --add safe.directory /home/runner/work/node-code/node-code
-        git config --global user.name "hiren"
-        git config --global user.email "hirenparghi90@gmail.com"
-        git remote add origin git@github.com:hirenrparghi/node-code.git
-        git add .
-        git commit -m "publish node modules"
-        git config --global http.sslverify false
-        git checkout -b main
-        git push origin main --force 
+        cat ~/.ssh/id_rsa.pub
+        # node --version
+        # npm --version
+        # npm cache clean --force
+        # npm cache verify
+        # echo "install octokit"
+        # npm install @octokit/auth-app
+        # npm install @octokit/request
+        # echo "git setup"        
+        # pwd
+        # ls -la
+        # git init
+        # git config --global --add safe.directory /home/runner/work/node-code/node-code
+        # git config --global user.name "hiren"
+        # git config --global user.email "hirenparghi90@gmail.com"
+        # git remote add origin git@github.com:hirenrparghi/node-code.git
+        # git add .
+        # git commit -m "publish node modules"
+        # git config --global http.sslverify false
+        # git checkout -b main
+        # git push origin main --force 
 
       
         
