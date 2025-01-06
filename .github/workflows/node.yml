@@ -28,7 +28,6 @@ jobs:
         git init
         git config --global --add safe.directory /home/runner/work/node-code/node-code
         git config --global user.name "hiren"
-        # git config --global url.https://${{ secrets.GIT_PAT }}@github.com/hirenrparghi/node-code
         git config --global user.email "hirenparghi90@gmail.com"
         git remote add origin https://github.com/hirenrparghi/node-code.git
         git add .
