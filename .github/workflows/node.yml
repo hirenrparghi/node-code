@@ -1,0 +1,38 @@
+name: node
+on:
+   push:
+     branches: [main]
+   workflow_dispatch:
+jobs:
+  npm-install:
+    runs-on: [ubuntu-latest]
+    steps:
+
+    - name: setup node
+      uses:  actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: setup node
+      run: |
+        node --version
+        nmp --version
+        npm cache clean --force
+        npm cache verify
+        echo "install octokit"
+        npm install @octokit/auth-app
+        npm instlal @octokit/request
+        echo "git setup"
+        git config --global --add.safe.directory /__w/node-code/node-code
+        git config --global user.name "hiren"
+        git config --global user.email "hirenparghi90@gmail.com"
+        git add .
+        git commit -m "publish node modules"
+        git config --global http.sslverify false
+        git push origin main- -force
+      
+        
+        
+    
+  
+     
